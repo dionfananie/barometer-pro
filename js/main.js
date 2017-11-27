@@ -1,0 +1,123 @@
+for (var i = 1; i < 4; i++) {
+    var gauge = 'gauge-id-'+i;
+    // console.log(gauge)
+    var gauge_draw = new LinearGauge({
+        renderTo: gauge,
+        colorNumbers: 'red',
+        width:120,
+        height:300,
+        units:'20°C',
+        minValue:0,
+        maxValue:220,
+        majorTicks:['0','20','40','60','80','100','120','140','160','180','200','220'],
+        minorTicks:2,
+        strokeTicks:true,
+        highlights:'[ {"from": 100, "to": 220, "color": "rgba(200, 50, 50, .75)""} ]',
+        colorPlate:'#fff',
+        borderShadowWidth:0,
+        borders:false,
+        needleType:'arrow',
+        needleWidth:2,
+        animationDuration:1500,
+        animationRule:'linear',
+        tickSide:'left',
+        numberSide:'left',
+        needleSide:'left',
+        barStrokeWidth:7,
+        barBeginCircle:false,
+        value:75,
+    })
+    gauge_draw.draw()
+}
+for (var x = 1; x < 5; x++) {
+    var radial = 'gauge-radial-'+x
+    var radial_draw = new RadialGauge({
+        renderTo: radial,
+        width: 200,
+        height: 200,
+        units: 'Km/h',
+        title: false,
+        value: 122,
+        minValue: 0,
+        maxValue: 220,
+        majorTicks: [
+            '0','20','40','60','80','100','120','140','160','180','200','220'
+        ],
+        minorTicks: 2,
+        strokeTicks: false,
+        highlights: [
+            { from: 0, to: 220, color: 'rgba(46, 64, 83)' },
+            // { from: 50, to: 100, color: 'rgba(255,255,0,.15)' },
+            // { from: 100, to: 150, color: 'rgba(255,30,0,.25)' },
+            // { from: 150, to: 200, color: 'rgba(255,0,225,.25)' },
+            // { from: 200, to: 220, color: 'rgba(0,0,255,.25)' }
+        ],
+        colorPlate: '#222',
+        colorMajorTicks: '#f5f5f5',
+        colorMinorTicks: '#ddd',
+        colorTitle: '#fff',
+        colorUnits: '#ccc',
+        colorNumbers: '#eee',
+        colorNeedle: 'rgba(240, 128, 128, 1)',
+        colorNeedleEnd: 'rgba(255, 160, 122, .9)',
+        valueBox: true,
+        animationRule: 'bounce',
+        animationDuration: 500
+    }).draw();
+}
+
+for (var i = 1; i < 3;  i++) {
+    var compass = 'gauge-compass-'+i;
+    console.log(compass)
+    var gaugeCompass = new RadialGauge({
+        renderTo: compass,
+        width: 200,
+        height: 200,
+        minValue: 0,
+        maxValue: 360,
+        majorTicks: [
+            "N",
+            "NE",
+            "E",
+            "SE",
+            "S",
+            "SW",
+            "W",
+            "NW",
+            "N"
+        ],
+        minorTicks: 10,
+        ticksAngle: 360,
+        startAngle: 180,
+        strokeTicks: false,
+        highlights: false,
+        colorPlate: "#000000",
+        colorMajorTicks: "#f5f5f5",
+        colorMinorTicks: "#ddd",
+        colorNumbers: "#ccc",
+        colorNeedle: "rgba(240, 128, 128, 1)",
+        colorNeedleEnd: "rgba(255, 160, 122, .9)",
+        valueBox: false,
+        valueTextShadow: false,
+        colorCircleInner: "#fff",
+        colorNeedleCircleOuter: "#ccc",
+        needleCircleSize: 15,
+        needleCircleOuter: false,
+        animationRule: "linear",
+        needleType: "line",
+        needleStart: 75,
+        needleEnd: 99,
+        needleWidth: 3,
+        borders: true,
+        borderInnerWidth: 0,
+        borderMiddleWidth: 0,
+        borderOuterWidth: 10,
+        colorBorderOuter: "#ccc",
+        colorBorderOuterEnd: "#ccc",
+        colorNeedleShadowDown: "#222",
+        borderShadowWidth: 0,
+        animationDuration: 1500
+    }).draw();
+}
+
+         
