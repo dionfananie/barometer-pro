@@ -14,5 +14,10 @@ body{
 	width: 400px;
 	background-color: #031224;
 	margin: 5px;
-	padding: 50px
+	padding: 50px;
+
+}
+
+.content h2{
+	color: #acacac;
 }
