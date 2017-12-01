@@ -1,5 +1,5 @@
 body{
-	background-color: black;
+	background-color: #fff;
 }
 .gauge{
     padding: 0;
@@ -8,14 +8,37 @@ body{
     width: 800px;
 
 }
+.main-content{
+	padding: 3rem 0;
+}
 .content{
 	position: relative;
-	height: 400px;
-	width: 400px;
-	background-color: #031224;
-	margin: 5px;
-	padding: 50px;
-
+	height: 350px;
+    width: 350px;
+    background-color: #f5f5f5;
+    margin: 5px;
+    padding: 15px 0;
+	box-shadow: 3px 2px 5px #a4a4a438;
+}
+.content .content-circle{
+	position: relative;
+	display: block;
+	margin: 50px auto;
+	background-color: #ececec;
+	border-radius: 100%;
+	text-align:center;
+	width: 45%;
+	height: 150px
+}
+.content .content-circle h4{
+	display: inline-block;
+    margin: 50px 0;
+    font-size: 5rem;
+    color: #9c9c9c;
+}
+.content h3{
+	text-align: center;
+	color: #878787
 }
 
 .content h2{
