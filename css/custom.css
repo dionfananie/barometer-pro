@@ -3,44 +3,64 @@ body{
 }
 .gauge{
     padding: 0;
-    margin: 0 auto;
-    display: block;
-    width: 800px;
-
+    display: inherit;
+    position: relative;
 }
 .main-content{
 	padding: 3rem 0;
 }
 .content{
+	display: inline-block;
 	position: relative;
 	height: 350px;
     width: 350px;
     background-color: #f5f5f5;
-    margin: 5px;
+    margin: 10px;
     padding: 15px 0;
 	box-shadow: 3px 2px 5px #a4a4a438;
+	text-align: center;
+	color: #9c9c9c
 }
-.content .content-circle{
+.content .content-center{
 	position: relative;
 	display: block;
-	margin: 50px auto;
-	background-color: #ececec;
-	border-radius: 100%;
 	text-align:center;
-	width: 45%;
-	height: 150px
+	margin: 25px auto;
+	color: #878787
+}
+.content .content-circle{
+	background-color: #ececec;
+    border-radius: 100%;
+    margin: auto;
+    width: 45%;
+    text-align: center;
 }
 .content .content-circle h4{
 	display: inline-block;
     margin: 50px 0;
     font-size: 5rem;
-    color: #9c9c9c;
+}	
+.content .bottom{
+	margin-top: -40px;
+    margin-right: 20px;
 }
-.content h3{
+.content .bottom .main-num{
+    font-size: 30px;
+}
+.sub-content{
+	padding: 5px 30px;
+	margin-top: 15px;
+}
+.sub-content img{
+	width: 85%;
+}
+.sub-content div{
+	display: inline-block;
+}
+.sub-content div span{
+	display: block;
 	text-align: center;
-	color: #878787
 }
-
-.content h2{
-	color: #acacac;
+.sub-content .main-num{
+	font-size: 30px;
 }

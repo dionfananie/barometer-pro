@@ -1,34 +1,4 @@
-// for (var i = 1; i < 4; i++) {
-//     var gauge = 'gauge-id-'+i;
-//     // console.log(gauge)
-//     var gauge_draw = new LinearGauge({
-//         renderTo: gauge,
-//         colorNumbers: 'red',
-//         width:120,
-//         height:300,
-//         units:'20°C',
-//         minValue:0,
-//         maxValue:220,
-//         majorTicks:['0','20','40','60','80','100','120','140','160','180','200','220'],
-//         minorTicks:2,
-//         strokeTicks:true,
-//         highlights:'[ {"from": 100, "to": 220, "color": "rgba(200, 50, 50, .75)""} ]',
-//         colorPlate:'#fff',
-//         borderShadowWidth:0,
-//         borders:false,
-//         needleType:'arrow',
-//         needleWidth:2,
-//         animationDuration:1500,
-//         animationRule:'linear',
-//         tickSide:'left',
-//         numberSide:'left',
-//         needleSide:'left',
-//         barStrokeWidth:7,
-//         barBeginCircle:false,
-//         value:75,
-//     })
-//     gauge_draw.draw()
-// }
+
 for (var x = 1; x < 2; x++) {
     var radial = 'gauge-radial-'+x
     var radial_draw = new RadialGauge({
@@ -71,8 +41,8 @@ for (var i = 1; i < 2;  i++) {
     console.log(compass)
     var gaugeCompass = new RadialGauge({
         renderTo: compass,
-        width: 200,
-        height: 200,
+        width: 160,
+        height: 160,
         minValue: 0,
         maxValue: 360,
         value: 122,
