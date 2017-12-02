@@ -40,11 +40,14 @@ body{
     margin: 50px 0;
     font-size: 5rem;
 }	
+.content .bottom.left{
+	margin-left: 20px;
+}
 .content .bottom{
-	margin-top: -40px;
+	margin-top: -20px;
     margin-right: 20px;
 }
-.content .bottom .main-num{
+.content .main-num{
     font-size: 30px;
 }
 .sub-content{
@@ -63,4 +66,10 @@ body{
 }
 .sub-content .main-num{
 	font-size: 30px;
+}
+
+// CHART
+.content-center #tekanan_udara{
+	display: inline-block !important;
+	position: relative !important;
 }

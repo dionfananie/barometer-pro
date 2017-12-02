@@ -4,7 +4,7 @@
   "description": "Project contains barometer and other graph",
   "main": "index.js",
   "watch": {
-  "test": "js/*.js"
+    "test": "js/*.js"
   },
   "scripts": {
     "test": "js/*.js",
@@ -15,6 +15,7 @@
   "dependencies": {
     "bootstrap": "^3.3.7",
     "canvas-gauges": "^2.1.4",
+    "highcharts": "^6.0.3",
     "npm-watch": "^0.3.0",
     "watch": "^1.0.2"
   }
