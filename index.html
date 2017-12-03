@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/header.css">
 
         <!-- Script gauge -->
     </head>
@@ -22,45 +23,64 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
+       
+        <header class="header-basic-light">
+
+            <div class="header-limiter">
+                <h1>
+                    <a href="#">
+                        <img src="img/logo_bmkg.png">
+                        <span> BADAN METEOROLOGI, KLIMATOLOGI DAN GEOFISIKA</span>
+                        <p>a</p>
+                    </a> 
+                </h1>
+                <!-- <a href="#">Company<span>logo</span></a></h1> -->
+            </div>
+
+        </header>
 
         <!-- Add your site or application content here -->
+
         <div class="container main-content">
-            
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
-                    <h3>KECEPATAN ARAH ANGIN</h3>
-                    <div class="sub-content">
-                        <div class="pull-left left">
-                            <span class="main-num">15</span>
-                            <span>Max</span>
-                        </div> 
-                        <div class="pull-right right">
-                            <span class="main-num">15</span>
-                            <span>Min</span>
-                        </div>
+                    <div class="menu text-left">
+                        <span>2 Minutes</span><br/>
+                        <span class="main-num blue">NNE</span>
+                        <span class="blue right">10 <span>MPH</span></span>
                     </div>
-                    <canvas class="gauge" id="gauge-compass-1">
-                    </canvas> 
+                    <div class="menu text-left">
+                         <span>2 Minutes</span><br/>
+                        <span class="main-num blue">NNE</span>
+                        <span class="blue right">10 <span>MPH</span></span>
+                    </div>
+                    <div id="gauge_compass_1" style="display: inline-block;"></div>
                     <h3 class="text-center">122 <sup>O</sup> South East</h3>
+                    <div class="pull-left bottom">
+                        <span class="main-num">1024 </span>
+                        <span>Hpa</span>
+                    </div>
+                    <div class="pull-right bottom">
+                        <span class="main-num">15</span>
+                        <span>Min</span>
+                    </div>
                    
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content">
                     <h3>CURAH HUJAN</h3>
-                    <div class="sub-content">
-                        <div>
-                            <img src="img/curah_hujan.jpeg" alt="">
-                        </div> 
-                        <div class="clearfix"></div>
-                        <div class="pull-right right">
-                            <span class="main-num">15</span>
-                            <span>Min</span>
-                        </div>
-                    </div>
+                    <div>
+                        <img src="img/curah_hujan.jpeg" alt="">
+                    </div> 
+                    <div class="clearfix"></div>
+                    <div class="pull-right bottom">
+                        <span class="main-num">15</span>
+                        <span>Max</span>
+                    </div>  
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>WATER LEVEL</h3>
                     <canvas class="gauge" id="gauge-linear-1"></canvas>
@@ -71,7 +91,7 @@
                     </div>  
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>TEMPERATURE</h3>
                     <div class="content-center">
@@ -80,7 +100,7 @@
                         </div>
                          <span class="text-center">Celcius</span>
                     </div>
-                    <div class="sub-content">
+                    <!-- <div class="sub-content">
                         <div class="pull-left bottom">
                             <span class="main-num">15</span>
                             <span>Max</span>
@@ -93,10 +113,10 @@
                             <span class="main-num">15</span>
                             <span>Max</span>
                         </div> 
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>SOLAR RADIATION</h3>
                     <div class="sub-content">
@@ -115,24 +135,11 @@
                 </div>
             </div>
           
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>TEKANAN UDARA</h3>
-                     <!-- <div class="sub-content">
-                        <div class="pull-left left">
-                            <span class="main-num">924</span>
-                            <span>Max</span>
-                        </div> 
-                    </div> -->
-                    <div class="content-center">
-                        <!-- <canvas class="gauge" id="gauge-radial-1"> -->
-                        <!-- </canvas>  -->
-                        <div id="tekanan_udara" >
-                       
-                        </div>
-
-                    </div>
-                    <div class="pull-left bottom left">
+                    <div id="tekanan_udara" style="display: inline-block;"></div>
+                    <div class="pull-left bottom">
                         <span class="main-num">1024 </span>
                         <span>Hpa</span>
                     </div>
@@ -142,7 +149,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>HUMIDITY</h3>
                      <div class="content-circle">
@@ -151,7 +158,7 @@
                 </div>
                 
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-3">
                 <div class="content"> 
                     <h3>CONDUCTIVITY</h3>
                      <div class="content-circle">
@@ -159,7 +166,7 @@
                     </div>
                 </div>
             </div>
-             <div class="col-sm-4">
+             <div class="col-sm-3">
                 <div class="content"> 
                     <h3>PH</h3>
                      <div class="content-circle">
