@@ -8,8 +8,8 @@ var chart = new Highcharts.Chart({
             plotBackgroundImage: '#f5f5f5',
             plotBorderWidth: 0,
             plotShadow: false,
-            width:140,
-            height:140,
+            width:120,
+            height:120,
             tickWidth:80
         },
         title: {

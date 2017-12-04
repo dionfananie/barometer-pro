@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/flaticon.css"> 
         <link rel="stylesheet" href="css/custom.css">
         <link rel="stylesheet" href="css/header.css">
 
@@ -23,27 +24,52 @@
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-       
+       <header class="header-black">
+           <div class="pull-left">
+               <p>MINGGU, 03 DESEMBER 2017</p>
+           </div>
+           <div class="pull-right">
+               <p>STANDAR WAKTU INDONESIA <span>05:53:37 WIB / 22:53:37 UTC</span> ID | EN</p>
+           </div>
+       </header>
         <header class="header-basic-light">
-
             <div class="header-limiter">
-                <h1>
+                <h2>
                     <a href="#">
                         <img src="img/logo_bmkg.png">
                         <span> BADAN METEOROLOGI, KLIMATOLOGI DAN GEOFISIKA</span>
-                        <p>a</p>
+                        <p>Cepat, Tepat, Akurat, Luas, dan Mudah Dipahami</p>
                     </a> 
-                </h1>
+                </h2>
                 <!-- <a href="#">Company<span>logo</span></a></h1> -->
             </div>
+            <div class="pull-right">Real Time Monitoring AWS Pelabuhan xxxx</div>
 
         </header>
 
         <!-- Add your site or application content here -->
 
-        <div class="container main-content">
-            <div class="col-sm-3">
+        <div class="main-content">
+             <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content"> 
+                    <div class="col-xs-12 header-content">
+                        <h3>Temperature</h3>
+                        <span class="icon flaticon-thermometer"></span>
+                    </div>
+                    <div class="content-center">
+                        <div class="content-center">
+                            <h4>80<sup>o</sup></h4>
+                            <p class="text-center">Celcius</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="content"> 
+                    <div class="col-xs-12 header-content">
+                        <h3>Wind</h3>
+                        <span class="icon flaticon-wind"></span>
+                    </div>
                     <div class="menu text-left">
                         <span>2 Minutes</span><br/>
                         <span class="main-num blue">NNE</span>
@@ -55,7 +81,7 @@
                         <span class="blue right">10 <span>MPH</span></span>
                     </div>
                     <div id="gauge_compass_1" style="display: inline-block;"></div>
-                    <h3 class="text-center">122 <sup>O</sup> South East</h3>
+                    <div class="clearfix"></div>
                     <div class="pull-left bottom">
                         <span class="main-num">1024 </span>
                         <span>Hpa</span>
@@ -67,9 +93,12 @@
                    
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content">
-                    <h3>CURAH HUJAN</h3>
+                    <div class="col-xs-12 header-content">
+                        <h3>Percipitation</h3>
+                        <span class="icon flaticon-tint-drop"></span>
+                    </div>
                     <div>
                         <img src="img/curah_hujan.jpeg" alt="">
                     </div> 
@@ -80,64 +109,12 @@
                     </div>  
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content"> 
-                    <h3>WATER LEVEL</h3>
-                    <canvas class="gauge" id="gauge-linear-1"></canvas>
-                    <div class="clearfix"></div>
-                    <div class="pull-right bottom">
-                        <span class="main-num">15</span>
-                        <span>Max</span>
-                    </div>  
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="content"> 
-                    <h3>TEMPERATURE</h3>
-                    <div class="content-center">
-                         <div class="content-circle">
-                            <h4>80<sup>o</sup></h4>
-                        </div>
-                         <span class="text-center">Celcius</span>
+                     <div class="col-xs-12 header-content">
+                        <h3>Pressure</h3>
+                        <span class="icon flaticon-speedometer-1"></span>
                     </div>
-                    <!-- <div class="sub-content">
-                        <div class="pull-left bottom">
-                            <span class="main-num">15</span>
-                            <span>Max</span>
-                        </div>  
-                        <div class="pull-left bottom">
-                            <span class="main-num">15</span>
-                            <span>Max</span>
-                        </div> 
-                        <div class="pull-left bottom">
-                            <span class="main-num">15</span>
-                            <span>Max</span>
-                        </div> 
-                    </div> -->
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="content"> 
-                    <h3>SOLAR RADIATION</h3>
-                    <div class="sub-content">
-                        <div class="pull-left left">
-                            <span class="main-num">924</span>
-                            <span>Max</span>
-                        </div> 
-                    </div>
-                    <div class="content-center">
-                        <div class="content-circle">
-                            <h4>80<sup>o</sup></h4>
-                        </div>
-                        <span class="text-center">watt/m2</span>
-                        
-                    </div>  
-                </div>
-            </div>
-          
-            <div class="col-sm-3">
-                <div class="content"> 
-                    <h3>TEKANAN UDARA</h3>
                     <div id="tekanan_udara" style="display: inline-block;"></div>
                     <div class="pull-left bottom">
                         <span class="main-num">1024 </span>
@@ -149,29 +126,67 @@
                     </div>
                 </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content"> 
-                    <h3>HUMIDITY</h3>
-                     <div class="content-circle">
-                        <h4>80<sup>o</sup></h4>
+                    <div class="col-xs-12 header-content">
+                        <h3>Solar Radiation</h3>
+                        <span class="icon flaticon-sun"></span>
+                    </div>
+                    <div class="menu text-left pull-left">
+                        <span>2 Minutes</span><br/>
+                        <span class="main-num blue">NNE</span>
+                        <span class="blue right">10 <span>MPH</span></span>
+                    </div>
+                    <div class="col-xs-12">
+                        <div class="content-center">
+                            <h4>400</h4>
+                            <p class="text-center">watt/m2</p>
+                        </div>  
+                        
                     </div>
                 </div>
-                
             </div>
-            <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content"> 
-                    <h3>CONDUCTIVITY</h3>
-                     <div class="content-circle">
+                    <div class="col-xs-12 header-content">
+                        <h3>Humidity</h3>
+                        <span class="icon">%</span>
+                    </div>
+                    <div class="content-center">
                         <h4>80<sup>o</sup></h4>
+                        <p class="text-center">Celcius</p>
                     </div>
                 </div>
             </div>
-             <div class="col-sm-3">
+            <div class="col-md-3 col-sm-6 col-xs-12">
                 <div class="content"> 
-                    <h3>PH</h3>
-                     <div class="content-circle">
-                        <h4>80<sup>o</sup></h4>
+                   <div class="col-xs-12 header-content">
+                        <h3>Ph & Conductivity</h3>
+                        <span class="icon flaticon-meter"></span>
                     </div>
+                     <div class="content-center">
+                        <div class="col-md-6 border">
+                            <h2>40.2</h2> 
+                        </div>
+                        <div class="col-md-6">
+                            <h2>8.2</h2> 
+                        </div>
+                        <p class="text-center">Description</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="content"> 
+                    <div class="col-xs-12 header-content">
+                        <h3>Water Level</h3>
+                        <span class="icon flaticon-water-level"></span>
+                    </div>
+                    <canvas class="gauge" id="gauge-linear-1"></canvas>
+                    <div class="clearfix"></div>
+                    <div class="pull-right bottom">
+                        <span class="main-num">15</span>
+                        <span>Max</span>
+                    </div>  
                 </div>
             </div>
 
