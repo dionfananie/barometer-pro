@@ -55,8 +55,12 @@ body{
     margin: auto;
     font-size: 5rem;
 }	
-.content .content-center .border{
-	border-right: 1px solid
+.content .center{
+	margin-top: 100px;
+}
+.content .border{
+	border-right: 1px solid;
+	height: 60%
 }
 .content .bottom.left{
 	margin-left: 20px;
